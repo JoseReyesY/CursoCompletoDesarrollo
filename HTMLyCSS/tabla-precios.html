@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla de precios</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+
+        html {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        h2 {
+            font-weight: 400;
+        }
+
+        .container {
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        .flex {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .text-center {
+            text-align: center; /* Centrar el texto */
+        }
+
+        .column {
+            width: 23%;
+            margin: 0 auto;
+            padding: 10px;
+            background-color: rgb( 238, 238, 238 );
+            border: 1px solid #333; /* Añadir borde */
+            border-radius: 5px; /* Añadir borde redondeado */
+            box-shadow: 10px 10px 15px #888;
+            color: #333;
+            box-sizing: border-box; /* Nos ahorra calcular las medidas de todo */
+        }
+
+        .price {
+            font-size: 50px;
+            color: #00dac7;
+        }
+
+        .btn-price {
+            margin-bottom: 10px;
+            text-decoration: none;
+            padding: 10px;
+            display: block;
+            background-color: salmon;
+            border-radius: 3px;
+            color: #fff;
+        }
+
+        .btn-price:hover {
+            background-color: rgb( 247, 100, 84 );
+        }
+
+        @media (max-width: 1070px) {
+            .column {
+                width: 45%;
+                margin-bottom: 20px;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .column {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <section class="container flex text-center">
+        <div class="column">
+            <h2>Plan Uno</h2>
+            <p class="price">$500</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <hr>
+            <p>Lorem, ipsum dolor.</p>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+            <p>Lorem, ipsum.</p>
+            <hr>
+            <a href="#" class="btn-price">Comprar</a>
+        </div>
+
+        <div class="column">
+            <h2>Plan Uno</h2>
+            <p class="price">$500</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <hr>
+            <p>Lorem, ipsum dolor.</p>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+            <p>Lorem, ipsum.</p>
+            <hr>
+            <a href="#" class="btn-price">Comprar</a>
+        </div>
+
+        <div class="column">
+            <h2>Plan Uno</h2>
+            <p class="price">$500</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <hr>
+            <p>Lorem, ipsum dolor.</p>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+            <p>Lorem, ipsum.</p>
+            <hr>
+            <a href="#" class="btn-price">Comprar</a>
+        </div>
+
+        <div class="column">
+            <h2>Plan Uno</h2>
+            <p class="price">$500</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <hr>
+            <p>Lorem, ipsum dolor.</p>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+            <p>Lorem, ipsum.</p>
+            <hr>
+            <a href="#" class="btn-price">Comprar</a>
+        </div>
+    </section>
+
+</body>
+</html>
