@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .contenedor {
+            width: 80%;
+            /* height: 500px; */
+            margin: 50px auto;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            /* align-items: stretch; Toma el alto del contenedor, pero la caja hija no tiene que tener altura definida */
+            background-color: #FF5C29;
+        }
+
+        .hijo {
+            width: 400px;
+            height: 100px;
+            text-align: center;
+            margin: 30px;
+            padding: 20px;
+            /* flex-grow: 1;
+            flex-shrink: 0 ; */
+            flex: 1 1 auto;
+            order: 2;
+            background-color: #00B285;
+            font-size: 40px;
+            color: #FFF;
+        }
+
+        .otro {
+            order: 1;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="contenedor">
+
+        <div class="hijo">A</div>
+        <div class="hijo">B</div>
+        <div class="hijo">C</div>
+        <div class="hijo otro">D</div>
+        <div class="hijo">E</div>
+        <div class="hijo">F</div>
+
+    </div>
+
+</body>
+</html>
